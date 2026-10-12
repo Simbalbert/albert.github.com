@@ -11458,3 +11458,29 @@ a.text-dark:hover {
     margin-bottom: 0;
     line-height: 1.7;
 }
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .skills-section {
+        padding: 35px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .skill-card {
+        padding: 20px 16px;
+    }
+}
